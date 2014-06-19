@@ -1,0 +1,49 @@
+<html>
+	<head>
+       <meta name="viewport" content="width=device-width, initial-scale=1"> 
+       <meta charset="UTF-8">
+       <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8">
+
+    // Wait for device API libraries to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    // device APIs are available
+    //
+    function onDeviceReady() {
+        navigator.splashscreen.show();
+    }
+
+	function Idioma(){
+		navigator.splashscreen.hide();
+		 var idiomaNavegador = new String;
+		  if (navigator.language){
+			 idiomaNavegador = navigator.language;
+		  } else {
+			 idiomaNavegador = navigator.browserLanguage;
+		  } 
+		  idiomaNavegador=idiomaNavegador.toUpperCase();
+		  var tlink= new String;
+		  if ( (idiomaNavegador=="CA") ||  (idiomaNavegador=="ES") || (idiomaNavegador=="DE") || (idiomaNavegador=="EN") || (idiomaNavegador=="FR") || (idiomaNavegador=="IT") || (idiomaNavegador=="RU") ){
+			  tlink=idiomaNavegador + ("/index.html");
+			  
+		  }else{
+			  tlink="ES/index.html";
+		  }
+		  //document.links["LinkIntern"].href = tlink;
+		  document.location.href="ES/index.html";
+		}
+		</script>
+    </head>
+    <body id="inicio">
+    	<script>
+		document.location.href="ES/index.html";
+		</script>
+    	<div style="width:100%; height:100%; display:block" onClick="javascript:Idioma();">
+"		&nbsp;
+		</div>
+ 
+        
+    </body>
+</html>

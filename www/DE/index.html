@@ -1,0 +1,73 @@
+<html>
+	<head>
+       <meta name="viewport" content="width=device-width, initial-scale=1"> 
+       <meta charset="UTF-8">
+        <link rel="stylesheet" href="../themes/tema.css" />
+        <link rel="stylesheet" href="../themes/jquery.mobile.icons.min.css" />
+        <link rel="stylesheet" href="../js/jquery.mobile.structure-1.4.0.min.css" />
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/jquery.mobile-1.4.0.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../css/estilo.css"  /> 
+        <link rel="stylesheet" type="text/css" href="../css/font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+    </head>
+    <body>
+        <div id="menu" data-role="page">
+            <!----------------------------------------------CAPÇELERA------------------------------------------------------>
+            <div data-role="header" class="cabecera" data-theme="b">
+                <div class="contenedor">
+                    <span class="TitolMenorca">Menorca</span> <span class="Titol100">100 x 100 </span>
+                    <div class="idiomas">
+                       	 
+                        <label for="idioma" class="select idioma-de"></label>	
+						<select id="idioma" name="idioma" onChange="javascript:CambiaDePagina(this.value);">
+                          <option value="CA">Català</option>
+                          <option value="ES">Español</option>
+                          <option value="EN">English</option>
+                          <option value="DE" selected>Deutsch</option>
+                          <option value="FR">Français</option>
+                          <option value="IT">Italiano</option>
+                          <option value="RU">Русский</option>
+                        </select>
+                        <script language="javascript">
+                            function CambiaDePagina(Pagina){
+                              	  location.href='../'+Pagina+'/index.html';
+                             }
+                        </script>  
+                    </div>
+                </div>
+            </div>
+            <!-----------------------------------------CONTINGUT----------------------------------------------------------->
+            <div role="main" class="ui-content">
+                <!--MODULS MENU-->
+                <div class="item origenes">
+                	<a href="../DE/origenes/index.html"><img src="../img/origenes/menu.jpg"/>
+                    <p>Wurzeln</p></a>
+                </div>
+                <div class="item sectores">
+                	<a href="../DE/sectores/index.html"><img src="../img/sectores/menu.jpg"/>
+                    <p>Bereiche</p></a>
+                </div>
+                <div class="item descubre">
+                	<a href="../DE/descubre/index.html"><img src="../img/descubre/menu.jpg"/>
+                    <p>Entdecke Menorca</p></a>
+                </div>
+                <div class="item poblaciones">
+                	<a href="../DE/poblaciones/index.html"><img src="../img/poblaciones/menu.jpg"/>
+                    <p>Ortschaften</p></a>
+                </div>
+                <div class="item sugerencias">
+                	<a href="../DE/sugerencias/index.html"><img src="../img/sugerencias/menu.jpg"/>
+                    <p>Vorschläge</p></a>
+                </div>
+                <div class="item presentacion">
+                	<a href="../DE/presentacion/index.html"><img src="../img/presentacion/menu.jpg"/>
+                <p>Vorstellung und Credits</p></a></div>
+                <!--FI MODULS MENU-->
+            </div>
+            <!------------------------------------------	PEU DE PÀGINA------------------------------------------------->	
+            
+            <!-----------------------------------------------FI DE PÀGINA------------------------------------------------>
+        </div>
+    </body>
+</html>

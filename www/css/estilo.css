@@ -1,0 +1,339 @@
+/*-------------------------PÀGINA---------------------------*/
+.ui-page, body, html,.ui-content{
+	background:transparent !important;
+}
+.ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper{
+	background:transparent;
+}
+body{
+	background:#fff;
+	/*font-family: 'Open Sans', sans-serif;*/
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight:lighter;
+	text-decoration:none;
+}
+a{
+	text-decoration:none;
+}
+.ui-page{
+	background:#fff !important;
+}
+.ui-navbar .ui-btn, .ui-footer-fixed {
+	background:#4B7198 !important;
+}
+.ui-navbar li{
+	margin-left:0px !important;
+}
+.ui-content{
+	padding:4.5%;
+	background:#fff;
+	/*display:inline-block;*/
+}
+.ui-content img{
+	width:100%;	
+}
+p{
+	line-height:1.3em}
+	
+h1 {
+    background: none repeat scroll 0 0 #FFCC00;
+    border-radius: 10px;
+    font-weight: lighter;
+    padding: 5px 30px;
+}
+/*-------------------------------CAPCELERA-------------------------------*/
+.cabecera{
+	background:#1890ff;
+	background:#00ABFB;
+	border:none;
+}
+.cabecera .contenedor{
+	width:91%;
+	margin:-2px auto -10px 4.5%;
+	line-height: 0.8em;
+    padding-top: 0;
+}
+.TitolMenorca {
+    font-size: 72px;
+    line-height: 72px;
+}
+.Titol100 {
+    font-size: 36px;
+}
+.logo{
+	width:100%;
+	margin-bottom:10px;
+	margin-top:10px;
+}
+.Titol{
+	width:80%;
+}
+.idiomas{
+	display:inline-block;
+	float:right;
+	width:20%;
+}
+.idiomas .ui-select{
+	position:absolute;
+	top:4px;
+	right:3%;
+}
+select#idioma{
+	background:#eeeeee;
+	float:left;
+}
+select#idioma option{
+	padding:15px;
+}
+.idiomas .ui-mini .ui-btn-icon-right:after{
+    right: 0.01em;
+}
+.idioma .ui-btn-icon-right:after {
+	background-color:rgba(0, 0, 0, 0);
+}
+.ui-btn-icon-left:after, .ui-btn-icon-right:after, .ui-btn-icon-top:after, .ui-btn-icon-bottom:after, .ui-btn-icon-notext:after{
+}
+
+.ui-page-theme-b .ui-btn, html .ui-bar-b .ui-btn, html .ui-body-b .ui-btn, html body .ui-group-theme-b .ui-btn, html head + body .ui-btn.ui-btn-b, .ui-page-theme-b .ui-btn:visited, html .ui-bar-b .ui-btn:visited, html .ui-body-b .ui-btn:visited, html body .ui-group-theme-b .ui-btn:visited, html head + body .ui-btn.ui-btn-b:visited{
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: medium none;
+    box-shadow: none;
+    color: rgba(0, 0, 0, 0);
+}
+.ui-page-theme-b .ui-btn:hover, html .ui-bar-b .ui-btn:hover, html .ui-body-b .ui-btn:hover, html body .ui-group-theme-b .ui-btn:hover, html head + body .ui-btn.ui-btn-b:hover{
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: medium none;
+    box-shadow: none;
+    color: rgba(0, 0, 0, 0);
+}
+
+.idiomas label{
+	height: 18px;
+    position: absolute;
+    top: 16px;
+    width: 27px;
+    z-index: 2;
+	right:9%;
+}
+
+.idiomas label.idioma-cat  { 
+	background:url(../images/banderas/Cat.png) no-repeat; 
+ }
+.idiomas label.idioma-es  { 
+	background:url(../images/banderas/Spain.png) no-repeat; 
+}
+.idiomas label.idioma-en  { 
+	background:url(../images/banderas/UK.png) no-repeat; 
+}
+.idiomas label.idioma-de  { 
+	background:url(../images/banderas/Germany.png) no-repeat; 
+}
+.idiomas label.idioma-fr  { 
+	background:url(../images/banderas/France.png) no-repeat; 
+}
+.idiomas label.idioma-it  { 
+	background:url(../images/banderas/Italy.png) no-repeat; 
+}
+
+.idiomas label.idioma-ru  { 
+	background:url(../images/banderas/Russia.png) no-repeat; 
+}
+
+/* 
+select#idioma option[value="CA"]   { background:url(../images/banderas/Cat.png) no-repeat; background-position:center;   }
+select#idioma option[value="ES"] { background:url(../images/banderas/Spain.png) no-repeat; background-position:center;  }
+select#idioma option[value="EN"] { background:url(../images/banderas/UK.png) no-repeat; background-position:center;  }
+select#idioma option[value="DE"] { background:url(../images/banderas/Germany.png) no-repeat; background-position:center;   }
+select#idioma option[value="FR"] { background:url(../images/banderas/France.png) no-repeat; background-position:center;   }
+select#idioma option[value="IT"] { background:url(../images/banderas/Italy.png) no-repeat; background-position:center;   }
+select#idioma option[value="RU"] { background:url(../images/banderas/Russia.png) no-repeat; background-position:center;}
+*/
+/*--------------------------CONTINGUT-------------------------------------*/
+.item{
+	float:left;
+	width:47%;
+	text-align:center;
+	margin-bottom:4.5%;
+}
+.item img{
+	width:100%;
+}
+.item:nth-child(odd){
+	margin-right:5%;
+}
+.item p a{
+	font-size:1.7vw;
+	text-decoration:none;
+	color:#FFFFFF;
+	font-weight:bold;
+}
+.item a p{
+	text-decoration:none;
+	color:#FFFFFF;
+	text-decoration:none;
+}
+.item a:hover p, p.itemmenu a:hover{
+	color:#000;
+}
+.item a:-webkit-any-link{
+	text-decoration:none;}
+
+.item p a:hover{
+	color:#000;
+}
+.ui-content .item p, .ui-content p.itemmenu{
+	margin-bottom:10px;
+	box-shadow: 7px 7px 8px #666769;
+	border-radius:13px;
+	margin-top:15px;
+	padding:7px 0;
+	text-align:center;
+}
+.item p:hover, p.itemmenu:hover{
+	box-shadow: 7px 0px 8px #666769;
+	transition: 0.2s linear;
+}
+.itemmenu{
+	text-align:center;
+	background:#1890FF;
+	padding:15px;
+	font-size:4.5vw;
+	color:#fff;
+	text-shadow:none;
+}
+.itemmenu .ui-link{
+		color:#fff;
+		text-decoration:none ;
+	}
+.imagen{
+	margin-bottom:10px;	
+    box-shadow: 3px 3px 6px #999999;
+    border-radius:10px;
+}
+/*----------------------FOOTER--------------------------------*/
+.pie{
+	background:#4B7198;
+	text-align:center;
+	border:none;
+}
+.pie .contenedor{
+	width:50%;
+	margin:0 auto;
+}
+.buscar{
+	width:100%;
+	margin-bottom:10px;
+	margin-top:15px;
+}
+
+
+@media screen and (orientation:landscape) {
+	#idiomas{
+		background:url(../images/portada-horitzontal.jpg) !important;
+		background-size:cover !important;
+		background-repeat:no-repeat;
+		background-attachment:fixed !important;
+	}
+	.logo{
+		width:25%;
+	}
+	.ui-content{
+		padding-top:1.5%;
+	}
+	.item{
+		width:30%;
+		margin-right:5%;
+		margin-bottom:20px;
+		
+	}
+	.item a p{
+		font-size:2vw;
+	}
+	.item img{
+		max-height:220px;
+	}
+	.item:nth-child(3), .item:nth-child(6){
+		margin-right:0px;
+	}
+	.izquierda{
+		float:left;
+		width:40%;
+		margin-right:40px;
+	}
+	.derecha{
+		float:left;
+		width:50%;
+	}
+	.itemmenu{
+		font-size:2.5vw;
+	}
+	.itemmenu:first-child{
+		margin-top:0px;
+	}
+	.ui-content .imagen{
+		float:left;
+		margin-right:20px;
+		margin-bottom:10px;
+		width:60%;
+	}
+	.idiomas .ui-select{
+		right:6%;
+	}
+}
+/* Portrait */
+@media screen and (orientation:portrait) {
+	.item a p{
+		font-size:4vw;
+	}
+	#idiomas{
+		background:url(../images/portada-vertical.jpg) !important;
+		background-size:cover !important;
+		background-repeat:no-repeat;
+		background-attachment:fixed !important;
+	}
+	.TitolMenorca {
+		font-size: 42px;
+		line-height: 42px;
+	}
+	.Titol100 {
+		font-size: 22px;
+	}
+
+}
+
+
+
+
+.origenes p{
+	background:#b6ad1f;
+}
+.sectores p{
+	background:#5fa516;
+}.descubre p{
+	background:#0093a3;
+}.poblaciones p{
+	background:#e5820b;
+}.sugerencias p{
+	background:#49549b;
+}.presentacion p.itemmenu, .item.presentacion p{
+	background:#774a0b;
+}
+
+#menu .ui-content{
+	clear:both;
+}
+.ui-content p {
+	text-align:justify;
+}
+
+.presentacion.colaboradores img{
+	width:142px;
+	clear:both;
+	float:left;
+	margin-right:20px;
+	margin-bottom:10px;
+}
+.presentacion.colaboradores p{
+	float:left;
+
+}
